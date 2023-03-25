@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import TextGradient from "./components/TextGradient";
+import LinearTextGradient from "./components/LinearTextGradient";
+import RadialTextGradient from "./components/RadialTextGradient";
+import ConicTextGradient from "./components/ConicTextGradiant";
 
-export { TextGradient };
+export { LinearTextGradient, RadialTextGradient, ConicTextGradient };

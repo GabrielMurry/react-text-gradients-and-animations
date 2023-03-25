@@ -1,6 +1,6 @@
 {
   "name": "text-gradients-react",
-  "description": "Text gradients for React projects",
+  "description": "Easily apply gradient effects to text (linear, radial, or conic) in React.",
   "author": "Gabriel Murry",
   "license": "MIT",
   "keywords": [
@@ -8,9 +8,11 @@
     "text gradient",
     "react text gradient",
     "text gradient for react",
-    "linear text gradient"
+    "linear text gradient",
+    "radial text gradient",
+    "conic text gradient"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -21,12 +23,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabrielMurry/react-text-gradient.git"
+    "url": "git+https://github.com/GabrielMurry/text-gradients-react.git"
   },
   "bugs": {
-    "url": "https://github.com/GabrielMurry/react-text-gradient/issues"
+    "url": "https://github.com/GabrielMurry/text-gradients-react/issues"
   },
-  "homepage": "https://github.com/GabrielMurry/react-text-gradient#readme",
+  "homepage": "https://github.com/GabrielMurry/text-gradients-react#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
