@@ -1,3 +1,5 @@
+import React from "react";
+
 const TextGradient = ({ angle, colors, children }) => {
   return (
     <span

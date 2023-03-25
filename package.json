@@ -1,20 +1,16 @@
 {
-  "name": "react-text-gradient",
+  "name": "text-gradients-react",
   "description": "Text gradients for React projects",
   "author": "Gabriel Murry",
   "license": "MIT",
   "keywords": [
-    "react",
-    "text",
-    "gradient",
-    "gradients",
-    "linear-gradient",
-    "text-gradient",
-    "react-text",
-    "react-text-gradient",
-    "react-gradient"
+    "react gradient",
+    "text gradient",
+    "react text gradient",
+    "text gradient for react",
+    "linear text gradient"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
