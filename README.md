@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Text Gradients for React
+Easily apply linear, radial, or conic text gradients to your React applications with only 3 components!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Installation and Importation
+First, install the package:
+```
+npm i --save text-gradients-react
+```
+Then import the <code>LinearTextGradient</code>, <code>RadialTextGradient</code>, or <code>ConicTextGradient</code> in your React application:
+```javascript
+import { LinearTextGradient, RadialTextGradient, ConicTextGradient } from "text-gradients-react"
+```
 
-## Available Scripts
+# LinearTextGradient
+The <code>LinearTextGradient</code> component is used to apply a linear gradient on text. The comonent can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>LinearTextGradient</code> component as shown below:
 
-In the project directory, you can run:
+```javascript
+<LinearTextGradient anlge={90} colors={["#fafa6e", "#39b48e"]}>
+  <h1> 
+    This text has linear gradient 
+   </h1>
+</LinearTextGradient>
+```
 
-### `npm start`
+### Properties
+| Prop  | Description | Default Value | Type |  Required |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| angle | The direction (angle) of the linear gradient | 0 | Integer |  False |
+| colors | Array of colors  | - | Array |  True |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### The ability to input any angle (0 - 360) for the linear gradient grants you more control, and a step closer to achieving your vision!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### You can also add different intensities for each color:
+* <code>"#fafa6e 50%"</code>
+* <code>"blue 25%"</code>
+* <code>"rgb(255, 0, 0) 75%"</code>
 
-### `npm test`
+# RadialTextGradient
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The <code>RadialTextGradient</code> component is used to apply a radial gradient on text. The component can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>RadialTextGradient</code> component as shown below:
 
-### `npm run build`
+```javascript
+<RadialTextGradient shape={"circle"} position={"center"} colors={["#fafa6e", "#39b48e"]}>
+  <h1> 
+    This text has radial gradient 
+   </h1>
+</RadialTextGradient>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Properties
+| Prop  | Description | Default Value | Type |  Required |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| shape | Ending shape of radial gradient | "circle" | String |  False |
+| position | Position of radial gradient | "center" | String | False |
+| colors | Array of colors  | - | Array |  True |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Types of shapes:
+* <code>"circle"</code>
+* <code>"ellipse"</code>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Types of positions:
+* <code>"center"</code>
+* <code>"left"</code>
+* <code>"right"</code>
+* <code>"top"</code>
+* <code>"bottom"</code>
+* <code>"75px"</code>
+* <code>"40px 40px"</code>
+* <code>"25% 50%"</code>
+* <code>"0 0"</code>
 
-### `npm run eject`
+#### You can also add different intensities for each color:
+* <code>"#fafa6e 50%"</code>
+* <code>"blue 25%"</code>
+* <code>"rgb(255, 0, 0) 75%"</code>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# ConicTextGradient
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The <code>ConicTextGradient</code> component is used to apply a conic gradient on text. The component can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>ConicTextGradient</code> component as shown below:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+<ConicTextGradient angle={90} position={"center"} colors={["#fafa6e", "#39b48e"]}>
+  <h1> 
+    This text has conic gradient 
+   </h1>
+</ConicTextGradient>
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Properties
+| Prop  | Description | Default Value | Type |  Required |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| angle | The direction (angle) of the conic gradient | 0 | Integer |  False |
+| position | Position of conic gradient | "center" | String | False |
+| colors | Array of colors  | - | Array |  True |
 
-## Learn More
+#### The ability to input any angle (0 - 360) for the linear gradient grants you more control, and a step closer to achieving your vision!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Types of positions:
+* <code>"center"</code>
+* <code>"left"</code>
+* <code>"right"</code>
+* <code>"top"</code>
+* <code>"bottom"</code>
+* <code>"75px"</code>
+* <code>"40px 40px"</code>
+* <code>"25% 50%"</code>
+* <code>"0 0"</code>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### You can also add different intensities for each color:
+* <code>"#fafa6e 50%"</code>
+* <code>"blue 25%"</code>
+* <code>"rgb(255, 0, 0) 75%"</code>
