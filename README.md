@@ -1,15 +1,15 @@
 # Text Gradients and Animations for React
 
-Easily apply linear, radial, or conic text gradients, and text gradient animations, to your React applications with only 3 components!
+Easily apply **linear**, **radial**, or **conic** text gradients, and text gradient **animations**, to your React applications with only 3 components!
 
-You can input as many colors as needed!
+*You can also input <ins>as many colors as needed!</ins>*
 
 # Installation and Importation
 
 First, install the package:
 
 ```
-npm i --save text-gradients-react
+npm i --save react-text-gradients-and-animations
 ```
 
 Then import the <code>LinearTextGradient</code>, <code>RadialTextGradient</code>, or <code>ConicTextGradient</code> in your React application:
@@ -19,7 +19,7 @@ import {
   LinearTextGradient,
   RadialTextGradient,
   ConicTextGradient,
-} from "text-gradients-react";
+} from "react-text-gradients-and-animations";
 ```
 
 # LinearTextGradient
