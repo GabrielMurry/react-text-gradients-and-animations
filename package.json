@@ -1,16 +1,16 @@
 {
-  "name": "text-gradients-react",
-  "description": "Easily apply gradient effects to text (linear, radial, or conic) in React.",
+  "name": "react-text-gradients-and-animations",
+  "description": "Easily apply gradient effects to text (linear, radial, or conic) and text gradient animations in React.",
   "author": "Gabriel Murry",
   "license": "MIT",
   "keywords": [
     "react gradient",
-    "text gradient",
-    "react text gradient",
-    "text gradient for react",
-    "linear text gradient",
-    "radial text gradient",
-    "conic text gradient"
+    "text gradients",
+    "text animations",
+    "text gradient animations",
+    "gradient animations",
+    "react text gradients",
+    "text gradient for react"
   ],
   "version": "1.0.4",
   "private": false,
@@ -23,22 +23,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabrielMurry/text-gradients-react.git"
+    "url": "git+https://github.com/GabrielMurry/react-text-gradients-and-animations.git"
   },
   "bugs": {
-    "url": "https://github.com/GabrielMurry/text-gradients-react/issues"
+    "url": "https://github.com/GabrielMurry/react-text-gradients-and-animations/issues"
   },
-  "homepage": "https://github.com/GabrielMurry/text-gradients-react#readme",
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "homepage": "https://github.com/GabrielMurry/react-text-gradients-and-animations#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
@@ -66,6 +56,12 @@
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2"
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "react": "^18.2.0",
+    "react-scripts": "^5.0.1"
   }
 }
