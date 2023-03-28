@@ -24,7 +24,7 @@ import {
 
 # LinearTextGradient
 
-The <code>LinearTextGradient</code> component is used to apply a linear gradient on text. The comonent can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>LinearTextGradient</code> component as shown below:
+The <code>LinearTextGradient</code> component is used to apply a linear gradient on text. It can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>LinearTextGradient</code> component as shown below:
 
 ```javascript
 <LinearTextGradient angle={90} colors={["#fafa6e", "#39b48e"]}>
@@ -58,7 +58,7 @@ You can also add different <ins>intensities</ins> for each <code>color</code>:
 
 # RadialTextGradient
 
-The <code>RadialTextGradient</code> component is used to apply a radial gradient on text. The component can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>RadialTextGradient</code> component as shown below:
+The <code>RadialTextGradient</code> component is used to apply a radial gradient on text. It can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>RadialTextGradient</code> component as shown below:
 
 ```javascript
 <RadialTextGradient
@@ -114,7 +114,7 @@ You can also add different <ins>intensities</ins> for each <code>color</code>:
 
 # ConicTextGradient
 
-The <code>ConicTextGradient</code> component is used to apply a conic gradient on text. The component can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>ConicTextGradient</code> component as shown below:
+The <code>ConicTextGradient</code> component is used to apply a conic gradient on text. It can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>ConicTextGradient</code> component as shown below:
 
 ```javascript
 <ConicTextGradient
