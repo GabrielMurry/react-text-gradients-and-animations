@@ -181,6 +181,6 @@ We will use the <code>LinearTextGradient</code> as our example:
 </LinearTextGradient>
 ```
 
-Remember, if you want to animate a gradient, you have to input the property <code>animate</code> (or <code>animate={True}</code>).
+Remember, if you want to animate a gradient, you have to input the property <code>animate</code> (or <code>animate={true}</code>).
 
-Since our linear gradient angle is 90 degrees, our colors are appearing in a vertical pattern. The animation works by translating the background, so we should a horizontal animation direction to make the changing colors visible! (if we use the vertical animation direction, we will see nothing being animated).
+Since our linear gradient angle is 90 degrees, our colors are appearing in a vertical pattern. The animation works by translating the background, so we should use a horizontal animation direction to make the changing colors visible! (if we use the vertical animation direction, we will see nothing being animated).
