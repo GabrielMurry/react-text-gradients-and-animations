@@ -1,6 +1,6 @@
 {
   "name": "react-text-gradients-and-animations",
-  "description": "Easily apply gradient effects to text (linear, radial, or conic) and text gradient animations in React.",
+  "description": "Easily apply linear, radial, or conic gradient effects to text, as well as text gradient animations in React.",
   "author": "Gabriel Murry",
   "license": "MIT",
   "keywords": [
@@ -12,7 +12,7 @@
     "react text gradients",
     "text gradient for react"
   ],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
