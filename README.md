@@ -4,6 +4,8 @@ Easily apply **linear**, **radial**, or **conic** text gradients, and text gradi
 
 *You can also input <ins>as many colors as needed!</ins>*
 
+### [Demo](https://text-gradients-and-animations-demo.vercel.app)
+
 # Installation and Importation
 
 First, install the package:
