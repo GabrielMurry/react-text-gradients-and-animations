@@ -18,6 +18,7 @@ const RadialTextGradient = ({
 }) => {
   return (
     <span
+      data-testid="radialTextGradient"
       style={{
         // if position of gradient is unspecified, it defaults to center
         background: `radial-gradient(${shape ? shape : "circle"} at ${

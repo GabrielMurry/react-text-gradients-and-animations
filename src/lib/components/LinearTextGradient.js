@@ -16,6 +16,7 @@ const LinearTextGradient = ({
 }) => {
   return (
     <span
+      data-testid="linearTextGradient"
       style={{
         background: `linear-gradient(${
           angle ? angle : 0

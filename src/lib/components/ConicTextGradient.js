@@ -17,6 +17,7 @@ const ConicTextGradient = ({
 }) => {
   return (
     <span
+      data-testid="conicTextGradient"
       style={{
         // position can be center, left etc. or '0, 0' '50% 50%' etc
         background: `conic-gradient(from ${angle ? angle : 0}deg at ${
