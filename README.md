@@ -1,5 +1,10 @@
 # Text Gradients and Animations for React
 
+[![npm version](https://img.shields.io/npm/v/react-text-gradients-and-animations)](https://img.shields.io/npm/v/react-text-gradients-and-animations)
+[![GitHub issues open](https://img.shields.io/github/issues/GabrielMurry/react-text-gradients-and-animations)](https://img.shields.io/github/issues/GabrielMurry/react-text-gradients-and-animations)
+[![dependencies](https://img.shields.io/librariesio/github/GabrielMurry/react-text-gradients-and-animations)](https://img.shields.io/librariesio/github/GabrielMurry/react-text-gradients-and-animations)
+[![License: MIT](https://img.shields.io/github/license/GabrielMurry/react-text-gradients-and-animations)](https://img.shields.io/github/license/GabrielMurry/react-text-gradients-and-animations)
+
 Easily apply **linear**, **radial**, or **conic** text gradients, and text gradient **animations**, to your React applications with only 3 components!
 
 *You can also input <ins>as many colors as needed!</ins>*
