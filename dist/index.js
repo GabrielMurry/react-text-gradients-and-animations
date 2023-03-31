@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "ConicTextGradient", {
   enumerable: true,
   get: function get() {
-    return _ConicTextGradiant.default;
+    return _ConicTextGradient.default;
   }
 });
 Object.defineProperty(exports, "LinearTextGradient", {
@@ -24,5 +24,5 @@ Object.defineProperty(exports, "RadialTextGradient", {
 });
 var _LinearTextGradient = _interopRequireDefault(require("./components/LinearTextGradient"));
 var _RadialTextGradient = _interopRequireDefault(require("./components/RadialTextGradient"));
-var _ConicTextGradiant = _interopRequireDefault(require("./components/ConicTextGradiant"));
+var _ConicTextGradient = _interopRequireDefault(require("./components/ConicTextGradient"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

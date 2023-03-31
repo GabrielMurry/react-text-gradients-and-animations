@@ -26,6 +26,7 @@ const RadialTextGradient = _ref => {
     children
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("span", {
+    "data-testid": "radialTextGradient",
     style: {
       // if position of gradient is unspecified, it defaults to center
       background: "radial-gradient(".concat(shape ? shape : "circle", " at ").concat(position ? position : "center", ", ").concat(colors.join(), ")"),

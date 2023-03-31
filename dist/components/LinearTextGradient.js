@@ -24,6 +24,7 @@ const LinearTextGradient = _ref => {
     children
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("span", {
+    "data-testid": "linearTextGradient",
     style: {
       background: "linear-gradient(".concat(angle ? angle : 0, "deg, ").concat(colors.join(), ")"),
       backgroundClip: "text",

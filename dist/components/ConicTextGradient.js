@@ -25,6 +25,7 @@ const ConicTextGradient = _ref => {
     children
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("span", {
+    "data-testid": "conicTextGradient",
     style: {
       // position can be center, left etc. or '0, 0' '50% 50%' etc
       background: "conic-gradient(from ".concat(angle ? angle : 0, "deg at ").concat(position ? position : "center", ", ").concat(colors.join(), ")"),
