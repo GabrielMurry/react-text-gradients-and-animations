@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/GabrielMurry/react-text-gradients-and-animations/issues"
   },
-  "homepage": "https://github.com/GabrielMurry/react-text-gradients-and-animations#readme",
+  "homepage": "https://github.com/GabrielMurry/react-text-gradients-and-animations",
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
