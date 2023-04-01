@@ -1,17 +1,9 @@
-language: node_js
-node_js:
-  - 16
-cache: npm
-install:
-  - npm install
-script:
-  - npm run test:coveralls
-  - npm run build
+sudo: false
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+language: node_js
+
+node_js:
+  - node
+
+script:
+  - npm run coveralls
