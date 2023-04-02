@@ -2,14 +2,18 @@
 
 [![npm version](https://img.shields.io/npm/v/react-text-gradients-and-animations)](https://img.shields.io/npm/v/react-text-gradients-and-animations)
 [![Code size](https://img.shields.io/github/languages/code-size/GabrielMurry/react-text-gradients-and-animations)](https://img.shields.io/github/languages/code-size/GabrielMurry/react-text-gradients-and-animations)
+[![Build Status](https://app.travis-ci.com/GabrielMurry/react-text-gradients-and-animations.svg?branch=master)](https://app.travis-ci.com/GabrielMurry/react-text-gradients-and-animations)
+[![Coverage Status](https://coveralls.io/repos/github/GabrielMurry/react-text-gradients-and-animations/badge.svg?branch=master)](https://coveralls.io/github/GabrielMurry/react-text-gradients-and-animations?branch=master)
 [![GitHub issues open](https://img.shields.io/github/issues/GabrielMurry/react-text-gradients-and-animations)](https://img.shields.io/github/issues/GabrielMurry/react-text-gradients-and-animations)
 [![License: MIT](https://img.shields.io/github/license/GabrielMurry/react-text-gradients-and-animations)](https://img.shields.io/github/license/GabrielMurry/react-text-gradients-and-animations)
 
-Easily apply **linear**, **radial**, or **conic** text gradients, and text gradient **animations**, to your React applications with only 3 components!
+Easily apply <ins>**linear**</ins>, <ins>**radial**</ins>, or <ins>**conic**</ins> text gradients to your React applications with only 3 components!
 
-*You can also input <ins>as many colors as needed!</ins>*
+Add text gradient <ins>**animations**</ins> instantly!
 
-### [Demo](https://text-gradients-and-animations-demo.vercel.app)
+<ins>**No limit**</ins> on color stops!
+
+## [Demo](https://text-gradients-and-animations-demo.vercel.app)
 
 # Installation and Importation
 
@@ -38,6 +42,8 @@ The <code>LinearTextGradient</code> component is used to apply a linear gradient
   <h1>This text has linear gradient!</h1>
 </LinearTextGradient>
 ```
+
+*Note:* Refresh the browser if the text is hidden underneath the background gradient.
 
 ### Properties
 
@@ -76,6 +82,8 @@ The <code>RadialTextGradient</code> component is used to apply a radial gradient
   <h1>This text has radial gradient!</h1>
 </RadialTextGradient>
 ```
+
+*Note:* Refresh the browser if the text is hidden underneath the background gradient.
 
 ### Properties
 
@@ -132,6 +140,8 @@ The <code>ConicTextGradient</code> component is used to apply a conic gradient o
   <h1>This text has conic gradient!</h1>
 </ConicTextGradient>
 ```
+
+*Note:* Refresh the browser if the text is hidden underneath the background gradient.
 
 ### Properties
 
