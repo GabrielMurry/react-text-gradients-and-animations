@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 require("../GradientAnimate.css");
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // used simply for keyframing gradient animations
 
@@ -25,7 +26,7 @@ const RadialTextGradient = _ref => {
     animateDirection,
     children
   } = _ref;
-  return /*#__PURE__*/_react.default.createElement("span", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
     "data-testid": "radialTextGradient",
     style: {
       // if position of gradient is unspecified, it defaults to center
@@ -39,8 +40,9 @@ const RadialTextGradient = _ref => {
       // if user selects animation true (default is false - no animation)
       animate ? // animation is referencing keyframes in GradientAnimate.css
       "gradient-animate-".concat(animateDirection ? animateDirection : "vertical", " ").concat(animateDuration ? animateDuration : 5, "s ease infinite") : "")
-    }
-  }, children);
+    },
+    children: children
+  });
 };
 var _default = RadialTextGradient;
 exports.default = _default;
