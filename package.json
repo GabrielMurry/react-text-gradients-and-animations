@@ -12,7 +12,7 @@
     "react text gradients",
     "text gradient for react"
   ],
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -38,6 +38,8 @@
     "coverage": "npm test -- --coverage --collectCoverageFrom='src/components/**/*.{js,jsx,ts,tsx}'",
     "coveralls": "jest --coverage --collectCoverageFrom='src/components/**/*.{js,jsx,ts,tsx}' && coveralls < coverage/lcov.info",
     "rollup": "rollup -c",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint-fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -68,8 +70,12 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.0",
     "@types/react": "^18.0.33",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
     "babel-jest": "^29.5.0",
     "coveralls": "^3.1.1",
+    "eslint": "^8.37.0",
+    "eslint-plugin-react": "^7.32.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",

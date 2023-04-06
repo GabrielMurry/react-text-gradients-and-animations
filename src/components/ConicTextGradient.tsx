@@ -18,33 +18,33 @@ interface ConicProps {
 // animateDuration not required - default 10
 // animateDirection not required - default vertical
 const ConicTextGradient = (props: ConicProps) => {
-  return (
-    <span
-      data-testid="conicTextGradient"
-      className={props.className}
-      style={{
-        // position can be center, left etc. or '0, 0' '50% 50%' etc
-        background: `conic-gradient(from ${props.angle ? props.angle : 0}deg at ${
-          props.position ? props.position : "center"
-        }, ${props.colors.join()})`,
-        backgroundClip: "text",
-        WebkitBackgroundClip: "text",
-        color: "transparent",
-        backgroundSize: `${props.animate ? "400% 400%" : ""}`, // background size must be smaller if you are animating, if no animate, then normal size
-        animation: `${
-          // if user selects animation true (default is false - no animation)
-          props.animate
-            ? // animation is referencing keyframes in GradientAnimate.css
-              `gradient-animate-${
-                props.animateDirection ? props.animateDirection : "vertical"
-              } ${props.animateDuration ? props.animateDuration : 5}s ease infinite`
-            : ""
-        }`,
-      }}
-    >
-      {props.children}
-    </span>
-  );
+    return (
+        <span
+            data-testid="conicTextGradient"
+            className={props.className}
+            style={{
+                // position can be center, left etc. or '0, 0' '50% 50%' etc
+                background: `conic-gradient(from ${props.angle ? props.angle : 0}deg at ${
+                    props.position ? props.position : "center"
+                }, ${props.colors.join()})`,
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+                backgroundSize: `${props.animate ? "400% 400%" : ""}`, // background size must be smaller if you are animating, if no animate, then normal size
+                animation: `${
+                    // if user selects animation true (default is false - no animation)
+                    props.animate
+                        ? // animation is referencing keyframes in GradientAnimate.css
+                        `gradient-animate-${
+                            props.animateDirection ? props.animateDirection : "vertical"
+                        } ${props.animateDuration ? props.animateDuration : 5}s ease infinite`
+                        : ""
+                }`,
+            }}
+        >
+            {props.children}
+        </span>
+    );
 };
 
 export default ConicTextGradient;
