@@ -35,13 +35,17 @@ import {
 
 # LinearTextGradient
 
-The <code>LinearTextGradient</code> component is used to apply a linear gradient on text. It can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>LinearTextGradient</code> component as shown below:
+The <code>LinearTextGradient</code> component is used to apply a linear gradient on text:
 
 ```javascript
-<LinearTextGradient angle={90} colors={["#fafa6e", "#39b48e"]}>
-  <h1>This text has linear gradient!</h1>
+<LinearTextGradient angle={45} colors={["#fafa6e", "#39b48e"]}>
+  This text has linear gradient!
 </LinearTextGradient>
 ```
+
+The component can be used inside any HTML element tags.
+
+If you input HTML element tags as children of <code>LinearTextGradient</code>, you will not see an output. To fix this, the <code>LinearTextGradient</code> component (or its parent component) must contain a display property (flex, inline-flex, etc.).
 
 *Note:* Refresh the browser if the text is hidden underneath the background gradient.
 
@@ -54,6 +58,7 @@ The <code>LinearTextGradient</code> component is used to apply a linear gradient
 | <code>animate</code>          | Allow text gradient to be animated           | False         | Boolean | False (True if you want animations) |
 | <code>animateDuration</code>  | Seconds it takes to do a full animation loop | 5             | Integer | False                               |
 | <code>animateDirection</code> | Direction of animation loop                  | "vertical"    | String  | False                               |
+| <code>className</code> | Custom CSS styling                  | -    | String  | False                               |
 
 #### The ability to input as many colors as you need (>= 2) and any angle (0 - 360) for the linear gradient grants you more control, and a step closer to achieving your vision!
 
@@ -71,7 +76,7 @@ You can also add different <ins>intensities</ins> for each <code>color</code>:
 
 # RadialTextGradient
 
-The <code>RadialTextGradient</code> component is used to apply a radial gradient on text. It can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>RadialTextGradient</code> component as shown below:
+The <code>RadialTextGradient</code> component is used to apply a radial gradient on text:
 
 ```javascript
 <RadialTextGradient
@@ -79,9 +84,13 @@ The <code>RadialTextGradient</code> component is used to apply a radial gradient
   position={"center"}
   colors={["#fafa6e", "#39b48e"]}
 >
-  <h1>This text has radial gradient!</h1>
+  This text has radial gradient!
 </RadialTextGradient>
 ```
+
+The component can be used inside any HTML element tags.
+
+If you input HTML element tags as children of <code>RadialTextGradient</code>, you will not see an output. To fix this, the <code>RadialTextGradient</code> component (or its parent component) must contain a display property (flex, inline-flex, etc.).
 
 *Note:* Refresh the browser if the text is hidden underneath the background gradient.
 
@@ -95,6 +104,7 @@ The <code>RadialTextGradient</code> component is used to apply a radial gradient
 | <code>animate</code>          | Allow text gradient to be animated           | False         | Boolean | False (True if you want animations) |
 | <code>animateDuration</code>  | Seconds it takes to do a full animation loop | 5             | Integer | False                               |
 | <code>animateDirection</code> | Direction of animation loop                  | "vertical"    | String  | False                               |
+| <code>className</code> | Custom CSS styling                  | -    | String  | False                               |
 
 #### The ability to input as many colors as you need (>= 2) grants you more control, and a step closer to achieving your vision!
 
@@ -129,17 +139,21 @@ You can also add different <ins>intensities</ins> for each <code>color</code>:
 
 # ConicTextGradient
 
-The <code>ConicTextGradient</code> component is used to apply a conic gradient on text. It can be used inside HTML text elements (such as <code>h1</code>) or HTML text elements can be children of the <code>ConicTextGradient</code> component as shown below:
+The <code>ConicTextGradient</code> component is used to apply a conic gradient on text:
 
 ```javascript
 <ConicTextGradient
-  angle={90}
+  angle={0}
   position={"center"}
   colors={["#fafa6e", "#39b48e"]}
 >
-  <h1>This text has conic gradient!</h1>
+  This text has conic gradient!
 </ConicTextGradient>
 ```
+
+The component can be used inside any HTML element tags.
+
+If you input HTML element tags as children of <code>ConicTextGradient</code>, you will not see an output. To fix this, the <code>ConicTextGradient</code> component (or its parent component) must contain a display property (flex, inline-flex, etc.).
 
 *Note:* Refresh the browser if the text is hidden underneath the background gradient.
 
@@ -153,6 +167,7 @@ The <code>ConicTextGradient</code> component is used to apply a conic gradient o
 | <code>animate</code>          | Allow text gradient to be animated           | False         | Boolean | False (True if you want animations) |
 | <code>animateDuration</code>  | Seconds it takes to do a full animation loop | 5             | Integer | False                               |
 | <code>animateDirection</code> | Direction of animation loop                  | "vertical"    | String  | False                               |
+| <code>className</code> | Custom CSS styling                  | -    | String  | False                               |
 
 #### The ability to input as many colors as you need (>= 2) and any angle (0 - 360) for the linear gradient grants you more control, and a step closer to achieving your vision!
 
@@ -194,7 +209,7 @@ We will use the <code>LinearTextGradient</code> as our example:
   animateDuration={10}
   animateDirection={"horizontal"}
 >
-  <h1>This text has an animated linear gradient!</h1>
+  This text has an animated linear gradient!
 </LinearTextGradient>
 ```
 
