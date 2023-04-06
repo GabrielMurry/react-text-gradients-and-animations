@@ -6,13 +6,13 @@
 
 ### Features (Patch)
 
-- Added eslint to package.
+- Added eslint to package. ([d28ae02](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/d28ae02))
 
 ## 1.1.4
 
 ### Features (Patch)
 
-- added CHANGELOG.md to be included in npm package through package.json.
+- Added CHANGELOG.md to be included in npm package through package.json. ([01e2806](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/01e2806))
 
 ## 1.1.3
 
