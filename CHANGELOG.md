@@ -12,7 +12,7 @@
 
 ### Features (Patch)
 
-- Added CHANGELOG.md to be included in npm package through package.json.
+- added CHANGELOG.md to be included in npm package through package.json.
 
 ## 1.1.3
 
