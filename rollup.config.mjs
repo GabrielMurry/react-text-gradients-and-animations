@@ -13,12 +13,12 @@ export default [
       {
         file: packageJson.main,
         format: "cjs",
-        sourcemap: true,
+        sourcemap: false, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
       },
       {
         file: packageJson.module,
         format: "esm",
-        sourcemap: true,
+        sourcemap: false, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
       },
     ],
     plugins: [
