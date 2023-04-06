@@ -6,14 +6,14 @@
 
 ### Features (Patch)
 
-* Created CHANGELOG.md.
+* Created CHANGELOG.md. ([0c9e906](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/0c9e906))
 
 ## 1.1.2
 
 ### Features (Patch)
 
-* Added prop className option for users to implement custom css styling. ([f9a8db7](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/92e7694))
-* Updated ReadMe - added className to properties table and altered code examples. ([a61be4e](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/92e7694))
+* Added prop className option for users to implement custom css styling. ([f9a8db7](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/f9a8db7))
+* Updated ReadMe - added className to properties table and altered code examples. ([a61be4e](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/a61be4e))
 
 ## 1.1.1
 
@@ -34,7 +34,7 @@
 * index files converted to ts files. 
 * Components and test files converted to tsx.
 * Deleted react-scripts dev dependency as it conflicted with TypeScript dev dependencies.
-* ([bb9786d](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/92e7694))
+* ([bb9786d](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/bb9786d))
 
 ## 1.0.8
 
