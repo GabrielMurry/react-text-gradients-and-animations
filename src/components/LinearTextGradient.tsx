@@ -7,6 +7,7 @@ interface LinearProps {
   animate?: boolean;
   animateDuration?: number;
   animateDirection?: string;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -19,6 +20,7 @@ const LinearTextGradient = (props: LinearProps) => {
   return (
     <span
       data-testid="linearTextGradient"
+      className={props.className}
       style={{
         background: `linear-gradient(${
           props.angle ? props.angle : 0

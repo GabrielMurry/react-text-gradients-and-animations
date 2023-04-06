@@ -8,6 +8,7 @@ interface ConicProps {
   animate?: boolean;
   animateDuration?: number;
   animateDirection?: string;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -20,6 +21,7 @@ const ConicTextGradient = (props: ConicProps) => {
   return (
     <span
       data-testid="conicTextGradient"
+      className={props.className}
       style={{
         // position can be center, left etc. or '0, 0' '50% 50%' etc
         background: `conic-gradient(from ${props.angle ? props.angle : 0}deg at ${

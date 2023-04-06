@@ -8,6 +8,7 @@ interface RadialProps {
   animate?: boolean;
   animateDuration?: number;
   animateDirection?: string;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -21,6 +22,7 @@ const RadialTextGradient = (props: RadialProps) => {
   return (
     <span
       data-testid="radialTextGradient"
+      className={props.className}
       style={{
         // if position of gradient is unspecified, it defaults to center
         background: `radial-gradient(${props.shape ? props.shape : "circle"} at ${
