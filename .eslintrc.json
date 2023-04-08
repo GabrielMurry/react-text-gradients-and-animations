@@ -20,7 +20,7 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "ignorePatterns": ["jest.config.js", "rollup.config.mjs"],
+  "ignorePatterns": ["jest.config.js", "rollup.config.mjs", "dist"],
   "rules": {
     "indent": ["error", 4],
     "linebreak-style": ["error", "unix"],

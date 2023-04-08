@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
+import terser from "@rollup/plugin-terser";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -13,12 +14,12 @@ export default [
       {
         file: packageJson.main,
         format: "cjs",
-        sourcemap: false, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
+        sourcemap: true, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
       },
       {
         file: packageJson.module,
         format: "esm",
-        sourcemap: false, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
+        sourcemap: true, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
       },
     ],
     plugins: [
@@ -26,6 +27,7 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }), // have to specify where location of your tsconfig.json file is
       postcss(),
+      terser(),
     ],
   },
   {
