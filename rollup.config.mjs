@@ -5,21 +5,19 @@ import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 
-import packageJson from "./package.json" assert { type: "json" };
-
 export default [
   {
     input: "src/index.ts", // entry point for this part of our library
     output: [
       {
-        file: packageJson.main,
+        file: "dist/cjs/index.js",
         format: "cjs",
-        sourcemap: true, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
+        sourcemap: false,
       },
       {
-        file: packageJson.module,
+        file: "dist/esm/index.js",
         format: "esm",
-        sourcemap: true, // NOT good practice, but trying to avoid warning spam on user end (still waiting for create-react-app to update this problem)
+        sourcemap: false,
       },
     ],
     plugins: [
@@ -27,7 +25,14 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }), // have to specify where location of your tsconfig.json file is
       postcss(),
-      terser(),
+      terser({
+        compress: {
+          pure_getters: true,
+          unsafe: true,
+          unsafe_comps: true,
+          warnings: false,
+        },
+      }),
     ],
   },
   {
