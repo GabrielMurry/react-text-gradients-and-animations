@@ -2,6 +2,18 @@
 
 [Github Commits](https://github.com/GabrielMurry/react-text-gradients-and-animations/commits/master)
 
+## 1.1.7
+
+### Features (Patch)
+
+- Turned off sourcemaps (not a the best practice). Just trying to reduce package size. ([15b9ef4](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/15b9ef4))
+
+## 1.1.6
+
+### Features (Patch)
+
+- Added rollup plugin terser to reduce file sizes and turned on sourcemaps. ([437630b](https://github.com/GabrielMurry/react-text-gradients-and-animations/commit/437630b))
+
 ## 1.1.5
 
 ### Features (Patch)
